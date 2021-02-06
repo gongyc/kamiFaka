@@ -14,9 +14,9 @@ def init_db(update=False):
     db.session.add(Payment('虎皮椒微信','微信支付',"{'API':'api.vrmrgame.com','appid':'XXXXXX','AppSecret':'YYYYY'}",'xunhupay.com 个人接口0.38~0.6%+1~2%',False))
     db.session.add(Payment('PAYJS支付宝','支付宝',"{'payjs_key':'XXXXXX','mchid':'YYYYY','mchid':'ZZZZZZZ'}",'payjs.cn 个人接口2.38%',False))
     db.session.add(Payment('PAYJS微信','微信支付',"{'payjs_key':'XXXXXX','mchid':'YYYYY','mchid':'ZZZZZZZ'}",'payjs.cn 个人接口2.38%',False))
-    db.session.add(Payment('码支付支付宝','支付宝',"{'codepay_id':'58027','codepay_key':'fgl454542WSDJHEJHDJZpTRrmbn','token':'jljCGU3pRvXXXXXXXXXXXb1iq'}",'codepay.fateqq.com挂机宝 不可用',False))
-    db.session.add(Payment('码支付微信','微信支付',"{'codepay_id':'58027','codepay_key':'fgl454542WSDJHEJHDJZpTRrmbn','token':'jljCGU3pRvXXXXXXXXXXXb1iq'}",'codepay.fateqq.com挂机宝 不可用',False))
-    db.session.add(Payment('码支付QQ','QQ支付',"{'codepay_id':'58027','codepay_key':'fgl454542WSDJHEJHDJZpTRrmbn','token':'jljCGU3pRvXXXXXXXXXXXb1iq'}",'codepay.fateqq.com挂机宝 不可用',False))
+    db.session.add(Payment('码支付支付宝','支付宝',"{'codepay_id':'58027','codepay_key':'fgl454542WSDJHEJHDJZpTRrmbn','token':'jljCGU3pRvXXXXXXXXXXXb1iq'}",'codepay.fateqq.com[不可用]',False))
+    db.session.add(Payment('码支付微信','微信支付',"{'codepay_id':'58027','codepay_key':'fgl454542WSDJHEJHDJZpTRrmbn','token':'jljCGU3pRvXXXXXXXXXXXb1iq'}",'codepay.fateqq.com[不可用]',False))
+    db.session.add(Payment('码支付QQ','QQ支付',"{'codepay_id':'58027','codepay_key':'fgl454542WSDJHEJHDJZpTRrmbn','token':'jljCGU3pRvXXXXXXXXXXXb1iq'}",'codepay.fateqq.com[不可用]',False))
     db.session.add(Payment('易支付','易支付',"{'API':'http://google.com','ID':'XXXXX','KEY':'YYYYYYYY'}",'支持订单查询接口的任意易支付 高费率不稳定',False))
     db.session.add(Payment('Mugglepay','Mugglepay',"{'TOKEN':'xxxxxx','Currency':'CNY','Web_url':'https://google.com'}",'mugglepay.com全球综合收款系统 高费率',False))
     db.session.add(Payment('YunGouOS','微信或支付宝支付',"{'mch_id':'xxxxxx','pay_secret':'yyyyyyy'}",'yungouos.com 微信或支付宝个体0.38%',False))
@@ -64,6 +64,7 @@ def init_db(update=False):
     db.session.add(Notice('微信通知',"{'token':'AT_nvlYDjev89gV96hBAvUX5HR3idWQwLlA'}",'xxxxxxxxxxxxxxxx',False,False))
     db.session.add(Notice('TG通知',"{'TG_TOKEN':'1290570937:AAHaXA2uOvDoGKbGeY4xVIi5kR7K55saXhs'}",'445545444',False,False))
     db.session.add(Notice('短信通知',"{'username':'XXXXXX','password':'YYYYY','tokenYZM':'必填','templateid':'必填'}",'15347875415',False,False))
+    db.session.add(Notice('QQ通知',"{'Key':'null'}",'格式：您的KEY@已添加的QQ号,示例：abc@123',False,False))
 
     # 订单信息【测试环境】
     db.session.add(Order('演示订单4454','普通商品演示','支付宝当面付','472835979','请求尽快发货',9.99,1,0.9,'账号：xxxxx；密码：xxxx',None,None))
